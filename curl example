@@ -8,7 +8,5 @@ curl -s -X GET "https://graph.facebook.com/v7.0/me/feed?access_token=<SECRET>" |
     }
   ],
   "paging": {
-    "previous": "https://graph.facebook.com/v7.0/2951414728304732/feed?since=1592515354&access_token=EAAD0mjuJESABAPgnAhNZCXwZBaZAQOAEUpbHbn4hu5YRT8fXqvlphs7PWzvs8ax2kR55V9LeRbi6KEPlZAV3qVKVrZBmKJy7fXP1f0ZB39BicHyy2V1ukxFF9lDTCGJbDf1nwwdOvsSmmrtBnoCPMgJizYTPtFB3vOZA3mQsVq8frZByRW8JwfrJ7ZCV2hVBm3MAZD&limit=25&__paging_token=enc_AdDGne4nRFIlaCLpSxOtsdif3pA9KjnSlg6F7kCmV46b8GNwVQLU76mAALKevWMTpZAbNVJlSHd8foha0SYq8hML2nq4sYOQoeXwsakuG8kn2IwZDZD&__previous=1",
-    "next": "https://graph.facebook.com/v7.0/2951414728304732/feed?access_token=EAAD0mjuJESABAPgnAhNZCXwZBaZAQOAEUpbHbn4hu5YRT8fXqvlphs7PWzvs8ax2kR55V9LeRbi6KEPlZAV3qVKVrZBmKJy7fXP1f0ZB39BicHyy2V1ukxFF9lDTCGJbDf1nwwdOvsSmmrtBnoCPMgJizYTPtFB3vOZA3mQsVq8frZByRW8JwfrJ7ZCV2hVBm3MAZD&limit=25&until=1592515354&__paging_token=enc_AdDGne4nRFIlaCLpSxOtsdif3pA9KjnSlg6F7kCmV46b8GNwVQLU76mAALKevWMTpZAbNVJlSHd8foha0SYq8hML2nq4sYOQoeXwsakuG8kn2IwZDZD"
   }
 }
