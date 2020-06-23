@@ -1,8 +1,10 @@
 from gtts import gTTS
 from playsound import playsound
 import os
+import sys
 import requests
 import json
+import time
 
 
 my_dictionary = {
@@ -16,12 +18,19 @@ people = [my_dictionary, {
 }]
 print (people[1]['stds'])
 
-# token = os.environ['APITOKEN']
-# response = requests.get('https://graph.facebook.com/v7.0/me/feed?access_token=' + token)
-# jsondata = json.loads(response.text)
-# firtdictionary = jsondata['data']
-# first_array_value = firstdictionary[0]
-# message = first_array_value[]
-# tts = gTTS('Hello, my name is trey. Wubbalubbadubdub')
-# tts.save('hello.mp3')
-# playsound('hello.mp3')
+# https://developers.facebook.com/tools/explorer/
+token = os.environ['APITOKEN']
+while True:
+    print('starting loop')
+    response = requests.get('https://graph.facebook.com/v7.0/me/feed?access_token=' + token)
+    if response.status_code != 200:
+        print('Boo!')
+        sys.exit(1)
+    jsondata = json.loads(response.text)
+    message = jsondata['data'][0]['message']
+    tts = gTTS(message)
+    tts.save('hello.mp3')
+    playsound('hello.mp3')
+    print('finishing loop')
+    time.sleep(2)
+
